@@ -31,4 +31,5 @@ Cross Platform Raspberry Pi Display Driver For the WaveShare 4.3 Inch ePaper Dis
 - Run the display code `python WaveshareDisply.py` in your terminal for a demo
 
 # Donations
-	- If you enjoy this project tip some ETH 0xfE53DbDE58057B535b9df7220B854Ea26E5fA641 
+	
+-If you enjoy this project tip some ETH `0xfE53DbDE58057B535b9df7220B854Ea26E5fA641`
