@@ -1,14 +1,13 @@
 # WaveShare-ePaper-Display
 Cross Platform Raspberry Pi Display Driver For the WaveShare 4.3 Inch ePaper Display.  I have tested it on Linux platforms and it works using a USB to TTL serial converter.  After Looking online for a display library, I found most of them were ported over from Arduino and did not take advantage of some Python functions.  I wrote the library to be as simple as possible to interact with. For example:
-
-if __name__=="__main__":
+```
     display=Display()
     display.setComPort("/dev/ttyUSB1")
     display.connect()
     display.clear()
     display.print(0,0,'You can put any text here!')
     display.update()
-
+```
 # Hardware Needed
 
 - Waveshare 4.3 inch display [Amazon](https://www.amazon.com/gp/product/B00VV5IMN0/ref=oh_aui_detailpage_o02_s02?ie=UTF8&psc=1)
