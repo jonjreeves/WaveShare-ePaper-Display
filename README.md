@@ -32,4 +32,3 @@ Cross Platform Raspberry Pi Display Driver For the WaveShare 4.3 Inch ePaper Dis
 
 # Donations
 	- If you enjoy this project tip some ETH `0xfE53DbDE58057B535b9df7220B854Ea26E5fA641` 
-	- Let me know if you have any questions or if you made anything using this library!
