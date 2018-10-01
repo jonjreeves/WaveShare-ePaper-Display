@@ -10,7 +10,7 @@ import serial
 class Display:
     def __init__(self):
         self.baudrate=115200
-        self.comPort="/dev/ttyUSB1"
+        self.comPort="/dev/ttyUSB0"
         self.connection=None
     
     def setBaudRate(self, rate):
@@ -54,7 +54,7 @@ class Display:
             self.connection.write(frame)
             self.connection.flushInput()
             
-    def print(self,x,y,text):
+    def printScreen(self,x,y,text):
         cmdType=b'\x30'
         textBytes=bytearray(text,'ascii')+bytes(1)
         xBytes=x.to_bytes(2,byteorder='big')
@@ -184,5 +184,5 @@ if __name__=="__main__":
     display=Display()
     display.connect()
     display.clear()
-    display.drawBMP(0,0,'PIC7.BMP')
+    display.printScreen(100,100,"Default Text Written At 100 100")
     display.update()
