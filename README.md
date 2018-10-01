@@ -23,6 +23,9 @@ Cross Platform Raspberry Pi Display Driver For the WaveShare 4.3 Inch ePaper Dis
 	
 # Software Setup
 
+-depends on pyserial
+	- On arch linux `pacman -S python-pyserial
+
 - Modify the line `display.setComPort("/dev/ttyUSB1")` in EthDisplay.py to match your hardware
 	- If you are using linux it is most likely `/dev/ttyUSB0` or `/dev/ttyUSB1`
 	- if you are using an raspberry pi directly pluged into the GPIO header `/dev/ttyAMA0` (You may have to modify the kernal line so that ttyAMA0 is not a uart display terminal)
